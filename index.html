@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#5B3A29">
+<title>Kothimbir — Authentic Maharashtrian Restaurant in Indiranagar, Bengaluru</title>
+<meta name="description" content="Visit Kothimbir in Indiranagar, Bengaluru for genuine Maharashtrian home-style food cooked fresh from scratch. Enjoy budget-friendly thalis, Sol Kadhi, breakfast specials and more. Open 7 days, 9 AM–11 PM. Call +91 93805 32823.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;color:#1c1007;background:#fdfaf5;-webkit-font-smoothing:antialiased}
+.wa-float{position:fixed;bottom:24px;right:24px;z-index:9999;background:#25d366;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,0.45);text-decoration:none;transition:transform .2s}.wa-float:hover{transform:scale(1.1)}
+nav{position:fixed;top:0;left:0;right:0;z-index:900;background:rgba(253,250,245,.95);backdrop-filter:blur(12px);border-bottom:1px solid rgba(0,0,0,0.06);padding:0 5vw;display:flex;align-items:center;justify-content:space-between;height:60px}
+.nav-brand{font-family:'Playfair Display',serif;font-size:1.1rem;color:#5B3A29}
+.nav-cta{background:#2E7D32;color:#fff;padding:9px 20px;border-radius:50px;text-decoration:none;font-size:.85rem;font-weight:600}
+/* HERO */
+.hero{position:relative;height:100svh;min-height:580px;display:flex;align-items:flex-end;overflow:hidden}
+.hero-bg{position:absolute;inset:-15%;width:130%;height:130%;background-image:url('https://images.unsplash.com/photo-1552566626-52f8b828add9?w=1600&q=85&fit=crop&auto=format');background-size:cover;background-position:center top;will-change:transform}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(15,8,0,.85) 0%,rgba(15,8,0,.2) 60%,transparent 100%)}
+.hero-content{position:relative;z-index:2;padding:0 5vw 52px;color:#fff;width:100%}
+.hero-tag{display:inline-flex;gap:6px;align-items:center;background:#2E7D32;padding:5px 14px;border-radius:50px;font-size:.78rem;font-weight:600;margin-bottom:16px}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,6vw,3.8rem);line-height:1.15;margin-bottom:14px}
+.hero p{font-size:clamp(.95rem,2vw,1.1rem);opacity:.85;margin-bottom:28px;max-width:520px}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn-amber{background:#2E7D32;color:#fff;padding:14px 30px;border-radius:8px;text-decoration:none;font-weight:600;font-size:.95rem}
+.btn-outline{border:1.5px solid rgba(255,255,255,.55);color:#fff;padding:13px 26px;border-radius:8px;text-decoration:none;font-size:.92rem}
+/* INFO STRIP */
+.info-strip{background:#5B3A29;color:#fff;display:flex;flex-wrap:wrap;justify-content:center}
+.info-item{padding:16px 24px;display:flex;align-items:center;gap:8px;font-size:.88rem;border-right:1px solid rgba(255,255,255,.1)}
+.info-item:last-child{border:none}
+/* STORY */
+section{padding:60px 5vw}
+.container{max-width:960px;margin:0 auto}
+.sec-label{font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;color:#2E7D32;margin-bottom:8px;font-weight:600}
+h2{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3.5vw,2.2rem);color:#5B3A29;margin-bottom:8px}
+.story-grid{display:grid;grid-template-columns:1fr;gap:32px}
+@media(min-width:768px){.story-grid{grid-template-columns:1fr 1fr;align-items:center}}
+.story-img{width:100%;aspect-ratio:5/4;object-fit:cover;border-radius:14px}
+.story-text p{color:#5a4a30;line-height:1.85;margin-bottom:14px;font-size:.95rem}
+.hl-pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.hl-pill{background:#fdf0dc;color:#5B3A29;border:1px solid #f5d89e;padding:6px 14px;border-radius:50px;font-size:.82rem;font-weight:500}
+/* MENU */
+.menu-bg{background:#fff}
+.menu-grid{display:grid;grid-template-columns:1fr;gap:14px}
+@media(min-width:480px){.menu-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:900px){.menu-grid{grid-template-columns:repeat(3,1fr)}}
+.menu-card{border:1px solid #f0e5cc;border-radius:12px;padding:22px;position:relative;overflow:hidden;transition:box-shadow .2s}
+.menu-card:hover{box-shadow:0 6px 20px rgba(0,0,0,.08)}
+.menu-card:before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:linear-gradient(#5B3A29,#2E7D32)}
+.menu-card h3{font-family:'Playfair Display',serif;color:#5B3A29;font-size:1.05rem;margin-bottom:8px}
+.menu-card p{color:#7a6040;font-size:.87rem;line-height:1.6}
+/* PARALLAX */
+.parallax-strip{position:relative;min-height:300px;display:flex;align-items:center;overflow:hidden}
+.pstrip-bg{position:absolute;inset:-20%;width:140%;height:140%;background-image:url('https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?w=1200&q=80&fit=crop&auto=format');background-size:cover;background-position:center;will-change:transform}
+.pstrip-overlay{position:absolute;inset:0;background:linear-gradient(90deg,#5B3A29f0 0%,#5B3A2999 60%,transparent 100%)}
+.pstrip-content{position:relative;z-index:2;padding:48px 5vw;color:#fff;max-width:500px}
+.pstrip-content h2{font-family:'Playfair Display',serif;font-size:clamp(1.5rem,3vw,2rem);margin-bottom:12px}
+.pstrip-content p{opacity:.82;margin-bottom:24px;font-size:.95rem}
+/* GALLERY */
+.food-gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+@media(min-width:600px){.food-gallery{grid-template-columns:repeat(3,1fr)}}
+.food-gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:10px}
+/* REVIEWS */
+.reviews-bg{background:#5B3A29}
+.rv-grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:32px}
+@media(min-width:640px){.rv-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:900px){.rv-grid{grid-template-columns:repeat(3,1fr)}}
+.rv-card{background:rgba(255,255,255,.1);border-radius:12px;padding:22px;backdrop-filter:blur(4px)}
+.rv-stars{color:#fbbf24;margin-bottom:8px}
+.rv-text{color:rgba(255,255,255,.8);font-size:.9rem;line-height:1.7;font-style:italic;margin-bottom:12px}
+.rv-author{color:rgba(255,255,255,.5);font-size:.82rem;font-weight:600}
+/* CTA */
+.cta-section{background:#2E7D32;color:#fff;text-align:center;padding:60px 5vw}
+.cta-section h2{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3vw,2.2rem);margin-bottom:12px}
+.cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:28px}
+.cta-btn-w{background:#fff;color:#2E7D32;padding:13px 30px;border-radius:8px;text-decoration:none;font-weight:700}
+.cta-btn-o{border:2px solid rgba(255,255,255,.6);color:#fff;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:500}
+footer{background:#0f0a00;color:#7a6040;text-align:center;padding:22px;font-size:.8rem}
+</style>
+</head>
+<body>
+<nav>
+  <span class="nav-brand">Kothimbir</span>
+  <a href="https://wa.me/919380532823?text=Hi%20Kothimbir!%20I%20found%20your%20restaurant%20online%20and%20would%20love%20to%20know%20more%20about%20your%20menu%20and%20timings.%20Could%20you%20please%20help%3F" class="nav-cta">Order Now</a>
+</nav>
+<div class="hero">
+  <div class="hero-bg" id="hp"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-tag">⭐ 4/5 · Google Rated</div>
+    <h1>Taste the Heart of Maharashtra, Right in Bengaluru</h1>
+    <p>Authentic Maharashtrian home-style cooking, crafted from scratch with fresh ingredients and love — no shortcuts, no additives.</p>
+    <div class="hero-btns">
+      <a href="https://wa.me/919380532823?text=Hi%20Kothimbir!%20I%20found%20your%20restaurant%20online%20and%20would%20love%20to%20know%20more%20about%20your%20menu%20and%20timings.%20Could%20you%20please%20help%3F" class="btn-amber">Reserve Your Table Today</a>
+      <a href="tel:093805 32823" class="btn-outline">📞 Reserve</a>
+    </div>
+  </div>
+</div>
+<div class="info-strip">
+  <div class="info-item">📞 093805 32823</div>
+  <div class="info-item">📍 Ground Floor, 113, 18th Main Rd, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560008, India</div>
+  <div class="info-item">🕐 Monday: 9:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 9:00 AM – 11:00 PM</div>
+</div>
+<section>
+  <div class="container">
+    <div class="story-grid">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AU_ZVEFGyDl_XTYyaydg2hk0ikLZNdeTbwB7XDQHW0ZVTol5MDH-phX4R0bnXhQvjc6l7YCMa-ynHlQp3-E1EHXM6t_EpBRDZJ_TADtBWjoyAkUhKEaw9Ei79JbBQLU0E5aV9EHTNBaO_zUP8nQdNlfPf0U-EMg2hRRFmUMHueJfL_BdN11BiBDbNcKCTM6ZvhLqa-XqEbNs6n5gamfp6e2l-l4SW5kfT3vkwhIRczE3qzAsFcJYMl7zwjJkLiwRxgd46tO9NRM1-zkpYuQtjO2kOTMUxk7_6zN1k5L0qJOMgj3TJA&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Kothimbir" class="story-img" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1552566626-52f8b828add9?w=1600&q=85&fit=crop&auto=format'">
+      <div>
+        <p class="sec-label">Our Story</p>
+        <h2>Made with Love</h2>
+        <p class="story-text" style="color:#5a4a30;line-height:1.85;margin-bottom:14px;font-size:.95rem">Kothimbir is a beloved Maharashtrian restaurant nestled in the vibrant neighbourhood of Indiranagar, Bengaluru. Named after the humble coriander leaf — a staple of Maharashtrian cuisine — this cosy eatery brings the true flavours of Maharashtra to your plate. With seating for around 10–12 tables, it offers an intimate, homely dining experience that keeps guests coming back for more. Open from morning to late evening, Kothimbir serves everything from hearty breakfasts to satisfying dinners, all prepared with the same warmth and authenticity.</p><p class="story-text" style="color:#5a4a30;line-height:1.85;margin-bottom:14px;font-size:.95rem">What sets Kothimbir apart is its unwavering commitment to real, honest food. Every dish is cooked from scratch using fresh ingredients, filling the air with irresistible aromas that take you straight to a Maharashtrian home kitchen. The owner and staff create an atmosphere that feels less like a restaurant and more like a family meal. Rated 4 stars by over 530 happy diners, Kothimbir is celebrated for its budget-friendly pricing, authentic flavours, and the kind of homely comfort that is increasingly rare in a bustling city like Bengaluru.</p>
+        <div class="hl-pills"><span class="hl-pill">100% authentic Maharashtrian cuisine cooked fresh from scratch — no additives, no shortcuts</span><span class="hl-pill">Budget-friendly pricing with a homely, welcoming ambiance in the heart of Indiranagar</span><span class="hl-pill">Rated 4/5 by 530+ diners and open 7 days a week from morning till 11:00 PM</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="menu-bg">
+  <div class="container">
+    <p class="sec-label">Menu</p>
+    <h2>What We Serve</h2>
+    <div class="menu-grid" style="margin-top:32px"><div class="menu-card"><h3>Maharashtrian Breakfast</h3><p>Start your day with traditional Maharashtrian morning fare — from poha and upma to sabudana khichdi — served fresh and full of flavour on weekends and Mondays from 9:00 AM.</p></div><div class="menu-card"><h3>Lunch Thali</h3><p>Relish a wholesome Maharashtrian thali featuring dal, sabzi, bhakri or rice, and accompaniments — a complete, home-cooked meal that satisfies both the stomach and the soul.</p></div><div class="menu-card"><h3>Dinner Service</h3><p>Wind down your evening with authentic Maharashtrian dinner dishes, available until 11:00 PM every day — perfect for a relaxed, flavourful end to your day.</p></div><div class="menu-card"><h3>Authentic Regional Specialties</h3><p>Enjoy signature dishes like Sol Kadhi, Kothimbir Vadi, Misal Pav, and more — recipes passed down through tradition and prepared without any artificial additives or preservatives.</p></div><div class="menu-card"><h3>Dine-In Experience</h3><p>Experience the warm, cosy ambiance of a small neighbourhood restaurant where the staff treats every guest like family — ideal for intimate meals, catch-ups, and breakfast dates.</p></div></div>
+  </div>
+</section>
+<div class="parallax-strip">
+  <div class="pstrip-bg" id="ps"></div>
+  <div class="pstrip-overlay"></div>
+  <div class="pstrip-content">
+    <h2>Dine With Us</h2>
+    <p>Ground Floor, 113, 18th Main Rd, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560008, India · Monday: 9:00 AM – 11:00 PM | Tuesday: 10:00 AM – 11:00 PM | Wednesday: 10:00 AM – 11:00 PM | Thursday: 10:00 AM – 11:00 PM | Friday: 10:00 AM – 11:00 PM | Saturday: 10:00 AM – 11:00 PM | Sunday: 9:00 AM – 11:00 PM</p>
+    <a href="https://wa.me/919380532823?text=Hi%20Kothimbir!%20I%20found%20your%20restaurant%20online%20and%20would%20love%20to%20know%20more%20about%20your%20menu%20and%20timings.%20Could%20you%20please%20help%3F" style="background:#2E7D32;color:#fff;padding:13px 28px;border-radius:8px;text-decoration:none;font-weight:700">💬 WhatsApp to Reserve</a>
+  </div>
+</div>
+<section><div class="container"><p class="sec-label">Gallery</p><h2>A Peek Inside</h2><div class="food-gallery" style="margin-top:28px"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AU_ZVEFGyDl_XTYyaydg2hk0ikLZNdeTbwB7XDQHW0ZVTol5MDH-phX4R0bnXhQvjc6l7YCMa-ynHlQp3-E1EHXM6t_EpBRDZJ_TADtBWjoyAkUhKEaw9Ei79JbBQLU0E5aV9EHTNBaO_zUP8nQdNlfPf0U-EMg2hRRFmUMHueJfL_BdN11BiBDbNcKCTM6ZvhLqa-XqEbNs6n5gamfp6e2l-l4SW5kfT3vkwhIRczE3qzAsFcJYMl7zwjJkLiwRxgd46tO9NRM1-zkpYuQtjO2kOTMUxk7_6zN1k5L0qJOMgj3TJA&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Kothimbir" loading="lazy" onerror="this.parentElement.remove()"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AU_ZVEEjov_5g4Kbwz_WuRSEqPeE3-9bCrZZkybhSyaAnPV-IHyzr1XaZU0PTAjkKM_xBofkcvdf6MdBFUwSMGXX5xVw5YjSF7bsqWDxds7UnIeDOoreAoYQfG-5adVjBQJAy612sUv4sSpSuVLSYknGPswdFO4tBsv5urV02UIWe6mwqcxg8hXsUygHrJn4lfP915mu6R5N5KYazr_KxWktzNjlGU7K4yrzvtrbMJTxKl5mXmtulC53ZRYA27MALZIKWZMbeKbiTfNtq0W2YPZkTGYXprADWW2o8WgflXDI3n0Qdw&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Kothimbir" loading="lazy" onerror="this.parentElement.remove()"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AU_ZVEHTVvmRVu0CLTSjngSA8Vrk6k2EA3rKsqlXY2mdPFXYUho7_0ha55muq1HsU-mh2J7vWhWnVnZxFySrr08bnrDqYEE4NDEPfRhJpU374g2NGl-vy_wRPlJudRQjKKzhDknUAn04NKxAilTDpnYes7ZNutAQtkyXUc4gJrpalzSKr8UCbjWcTVYCJ_LDhmUwnOM-A83gR5etfH9310SMcYYtNhPdkoH4JCTHwkpipMQdtD3Es_4neO7ESsbwLugBhXNRDBS6-u9aCMoar8gBrlo9_CpSAv768B_JlBDNEfzWmlRPaiOEW-otF17M4V8BlonMy6u2QbhTNagAp1TlENFk_fLW9w70JFJXWgpIOraYJrstwXw5sZg4onbq-l7mUKSUjLjXwv3jBN95q78Pu11e0s7UKwT0pdz6ry1x4MfbSH9E1ic1VEPEGdgO96O8&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Kothimbir" loading="lazy" onerror="this.parentElement.remove()"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AU_ZVEF2Miz_2flaXMlRFkmOMKfpgK9Mds1p9-vsYfsqsmm-OMIrExdIZWBq9faO9k0JbIxCVsTkQHxgK1Siw89XdoA082qZlEsT3pGahIGZEtoSjj8YFlWSxwMYlyUVpjZE9kynd06qBg9L-AfSJfuXSUFu9qDQGOhyjlXA6AYern-dNHh3J7QmW0QdoSLUOI_PtZO-K6BX5TSTnyRQE5zDp_knpeX3_bAtSbmE2HvYZh2F3dqeqcfNBeW9WMThjKwX_Wz14mo9uglrSirkZ0-AIo9TARdhbJSuuCCB9bHZEOt0cxFf_ktGVPEVUbNyFLrPLAcsIHh0SDe36J-od94fkXQlFn53iD6hQvS0TfqBZTvyoEcMGYMUMgoVzB9nkpdfoc7_uy6Ru_wVmTB6g3PPscIATI_NPrya2zaMWp9XnX9tbm2We_tDCh7jCVMq1w&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Kothimbir" loading="lazy" onerror="this.parentElement.remove()"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AU_ZVEGHxB5f38HQZ2mFM9zNuIHDq6IAouBq_DzmP1FhLLGsk8qhGrQpXLnJzDPikRwaUU3_ei8GilrLIi2p4kK7vPK49ERBzoQ9dbsaO1Cp1eURJjtS2WPgwJXDQfm1wrX4RP_V66L4iFEe5m4zdSTTUnBrqy2A071Rr7RlMfFQDvdNWsFGbgV4dtDwOaXF2M_DqE_355pLlt7UmU-71F61Ul11wRGfnXD5SqXBbP2LR5aGjqI6AwzGCbUuNAoBJP9NDya04yoEeAtQuhij5N7MOb7fY6mQCljEKiOwy7KeHAU73m6BfiaWX0i0q4PWFeRywM1V5uryN4PSe5xYqALN-9D8nql-5DwlHodgWTguwnvpt1wAt7inv6Nw15J6QjmU3CNb0CmGSHrJtlaj7k6j87P8o0N90Usrctab7d5gwHY&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Kothimbir" loading="lazy" onerror="this.parentElement.remove()"></div></div></section>
+<section class="reviews-bg">
+  <div class="container">
+    <p class="sec-label" style="color:rgba(255,255,255,.5)">Reviews</p>
+    <h2 style="color:#fff">Guest Stories</h2>
+    <div class="rv-grid"><div class="rv-card"><div class="rv-stars">★★★★★</div><p class="rv-text">"The owner, the staff, the ambiance makes you feel like you're at home. The food is authentic with no additive bullshit. Cooked from scratch, hence the fresh aroma can be felt. Will definitely visit again!"</p><div class="rv-author">— Joshua Yeon</div></div><div class="rv-card"><div class="rv-stars">★★★★★</div><p class="rv-text">"Kothimbir is a fantastic Maharashtrian restaurant conveniently located near Domlur and Indiranagar. The food is incredibly tasty, and you will definitely find an authentic Maharashtrian flavour here."</p><div class="rv-author">— Sarath</div></div><div class="rv-card"><div class="rv-stars">★★★★★</div><p class="rv-text">"It gave me the authentic Maharashtrian cuisine experience in Bangalore. The food is delicious and homely. It's very budget friendly as well — highly recommended!"</p><div class="rv-author">— Riya Pradhan</div></div></div>
+  </div>
+</section>
+<div class="cta-section">
+  <p class="sec-label" style="color:rgba(255,255,255,.7)">Visit Us</p>
+  <h2>Come Taste the Difference</h2>
+  <p style="opacity:.85;max-width:480px;margin:0 auto">Ground Floor, 113, 18th Main Rd, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560008, India</p>
+  <div class="cta-btns">
+    <a href="https://wa.me/919380532823?text=Hi%20Kothimbir!%20I%20found%20your%20restaurant%20online%20and%20would%20love%20to%20know%20more%20about%20your%20menu%20and%20timings.%20Could%20you%20please%20help%3F" class="cta-btn-w">💬 WhatsApp Order</a>
+    <a href="tel:093805 32823" class="cta-btn-o">📞 093805 32823</a>
+    <a href="https://maps.google.com/?cid=13515401270133417096" class="cta-btn-o">📍 Directions</a>
+  </div>
+</div>
+<footer>© 2026 Kothimbir · Ground Floor, 113, 18th Main Rd, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560008, India</footer>
+<a href="https://wa.me/919380532823?text=Hi%20Kothimbir!%20I%20found%20your%20restaurant%20online%20and%20would%20love%20to%20know%20more%20about%20your%20menu%20and%20timings.%20Could%20you%20please%20help%3F" class="wa-float" title="Chat on WhatsApp" aria-label="WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+<script>
+if(window.innerWidth>768){
+  const hp=document.getElementById('hp'),ps=document.getElementById('ps');
+  window.addEventListener('scroll',()=>{
+    const y=window.scrollY;
+    if(hp)hp.style.transform='translateY('+y*.3+'px)';
+    if(ps){const r=ps.closest('.parallax-strip').getBoundingClientRect();ps.style.transform='translateY('+(r.top*.2)+'px)'}
+  },{passive:true});
+}
+</script>
+</body></html>
